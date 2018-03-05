@@ -10,6 +10,12 @@ const bcrypt = require("bcrypt");
 app.set("view-engine", "hbs");
 app.use(parser.urlencoded({ extended: true }));
 
+app.get("/", (req, res) => {
+  Event.find({}).then(events => {
+    res.render("index", { events });
+  });
+});
+
 app.listen(3000, () => {
   console.log("Funciona!");
 });
