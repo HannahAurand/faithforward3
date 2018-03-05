@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const Event = require("../models/Event");
+const path = require("path");
 
 //At home page, upon the client's request, respond by:
 //Going into the EVENT object, and gettin the body of

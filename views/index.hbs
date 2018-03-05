@@ -3,12 +3,14 @@
 
 {{#each events}}
 <div class="event">
-<h3>{{title}}</h3>
-<p class="whenContainer"><span class="when">{{date}}</span> <span class="when">{{time}}</span> <span class="when">{{location}}</span></p>
-<p>{{description}}</p>
-<form action="/events/{{this.id}}?_method=delete" method="POST">
-<input type="submit" value="Remove Event">
-</form>
-<a href="/events/edit/{{id}}">Edit Event Details</a>
+    <h3>{{title}}</h3>
+    <p class="whenContainer"><span class="when">{{date}}</span> <span class="when">{{time}}</span> <span class="when">{{location}}</span></p>
+    <p>{{description}}</p>
+    <div class="clickables">
+        <form action="/events/{{this.id}}?_method=delete" method="POST">
+            <input type="submit" value="Remove Event">
+        </form>
+        <a href="/events/edit/{{id}}">Edit Event Details</a>
+    </div>
 </div>
 {{/each}} 
