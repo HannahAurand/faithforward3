@@ -26,6 +26,8 @@ app.get("/", (req, res) => {
 
 app.use("/events", eventsController);
 
-app.listen(3000, () => {
+app.set("port", process.env.PORT || 3000);
+
+app.listen(app.get("port"), () => {
   console.log("Funciona!");
 });
