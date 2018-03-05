@@ -10,6 +10,7 @@ const Event = require("./models/Event");
 const eventsController = require("./controllers/event");
 const methodOverride = require("method-override");
 
+app.use(express.static(__dirname + "/public"));
 app.set("view engine", "hbs");
 app.use(parser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
