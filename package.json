@@ -1,0 +1,29 @@
+{
+  "name": "faith-forward",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HannahAurand/Forward-Faithing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HannahAurand/Forward-Faithing/issues"
+  },
+  "homepage": "https://github.com/HannahAurand/Forward-Faithing#readme",
+  "dependencies": {
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "hbs": "^4.0.1",
+    "mongo": "^0.1.0",
+    "mongodb": "^3.0.3",
+    "passport": "^0.4.0"
+  }
+}
