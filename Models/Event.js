@@ -1,21 +1,25 @@
 const mongoose = require("../db/connection");
 
-const Event = new mongoose.Schema({
+const EventSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
   },
   date: {
-    type: Date,
+    type: String,
     required: true
   },
-  time: number,
+  time: String,
   location: {
-    type: string,
+    type: String,
     required: true
   },
   description: {
-    type: string,
+    type: String,
     required: true
   }
 });
+
+const Event = mongoose.model("Event", EventSchema);
+
+module.exports = Event;

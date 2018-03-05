@@ -1,0 +1,13 @@
+
+ <a href="/events/new">Create a New Event</a>
+
+{{#each events}}
+<div class="event"></div>
+<h3>{{title}}</h3>
+<p>{{date}}{{time}}{{location}}</p>
+<p>{{description}}</p>
+<form action="/events/{{this.id}}?_method=delete" method="POST">
+<input type="submit" value="Remove Event">
+</form>
+<a href="events/edit">Edit Event Details</a>
+{{/each}} 

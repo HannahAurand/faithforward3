@@ -10,5 +10,8 @@ Event.remove({}).then(() => {
       description:
         "Come receive prayer and join us for worship and guided prayer in an intimate, acoustic setting at NCC's Miracle Theatre on Barracks Row."
     })
-  ]);
+  ]).then(() => {
+    console.log("done");
+    process.exit();
+  });
 });
