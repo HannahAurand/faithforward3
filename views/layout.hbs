@@ -13,14 +13,19 @@
     <nav> 
         <h1>Faith Forward</h1>
         <button class="add"><a href="/events/new"> + New Event</a></button>
-        <div class="user">
-        <p class="login">login</p>
-        <p class="signup">sign up</p>
-        </div>
+        <ul class='user'>
+            {{#if currentUser}}
+              <li><a href="/users/{{currentUser.id}}">User: {{currentUser.id}}</a></li>
+              <li><a href="/logout">Logout</a></li>
+            {{else}}
+              <li><a href="/login">Login</a></li>
+              <li><a href="/signup">Signup</a></li>
+            {{/if}}
+      </ul>
     </nav>
     
     {{{body}}}
-    
+
     <footer></footer>
 </body>
 </html>
