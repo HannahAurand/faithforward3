@@ -15,9 +15,13 @@ app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "hbs");
 app.use(parser.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
+
+//Passport stuff
+require("./config/passport")(passport);
+app.use(passport.initialize());
+app.use(passport.session());
 // app.use(cookieParser());
 // app.use(bodyParser());
-
 app.get("/", (req, res) => {
   Event.find({}).then(events => {
     res.render("index", { events });
