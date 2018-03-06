@@ -4,7 +4,11 @@
 {{#each events}}
 <div class="event">
     <h3>{{title}}</h3>
-    <p class="whenContainer"><span class="when">{{date}}</span> <span class="when">{{time}}</span> <span class="when">{{location}}</span></p>
+    <div class="whenContainer">
+        <p>Date: {{date}}</p>
+        <p>Time: {{time}}</p>
+        <p>Location: {{location}}</p>
+    </div>
     <p>{{description}}</p>
     <div class="clickables">
         <form action="/events/{{this.id}}?_method=delete" method="POST">
