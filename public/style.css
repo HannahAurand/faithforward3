@@ -32,12 +32,13 @@ nav h1 {
 .add {
     border-radius:  8%/40%;
     height: 40px;
-    background-color: rgb(237, 240, 245);
+    background-color: rgba(237, 240, 245, 0);
     border: none;
     font-family: sans-serif;
     font-size: 20px;
     margin-right: 5%;
     margin-top: 10px;
+    border: 1px solid darkred;
     /* margin-left: 56%; */
     /* position: fixed; */
 
