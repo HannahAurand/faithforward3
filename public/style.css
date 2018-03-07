@@ -8,7 +8,7 @@ body {
 
 nav {
     height: 40px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     margin: 0px;
     /* margin-top: -85px; */
     display: flex;
@@ -20,10 +20,11 @@ nav {
 }
 
 nav h1 {
-    font-family: 'Annie Use Your Telescope', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
     margin: -5px 0px 10px 50px;
     font-size: 3em;
-    color: #B82563;
+    color: darkred;
 }
   
 .add {
@@ -128,12 +129,25 @@ a {
    width: 30%;
    margin-left: 20%;
    margin: 0 auto;
+   margin-top: 10%;
+   /* border: 1px solid red; */
+   /* height: 100%; */
 }
 
-.create_new_event input {
+.create_new_event input, .create_new_event textarea {
     margin-bottom: 20px;
     padding: 10px 10px 10px 10px;
     width: 100%;
+    /* height: 15px; */
+    /* border: 1px solid red; */
+    font-family: Montserrat, 'sans-serif';
+    font-size: 15px;
+    outline: none;
+}
+
+
+.create_new_event input:focus, .create_new_event textarea:focus {
+    border: 2px solid rgba(255, 0, 43, 0.699);
 }
 
 .AddNewEvent {
@@ -143,6 +157,7 @@ a {
    border-radius:  8%/40%;
    margin-left: 110px;
    margin: 0 auto;
+   /* height: 10px; */
 } 
 
 .user {
