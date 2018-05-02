@@ -1,9 +1,9 @@
 body {
-    background-image: url('https://cdn.pixabay.com/photo/2013/02/23/20/57/washington-dc-85531_1280.jpg');
+    /* background-image: url('https://cdn.pixabay.com/photo/2013/02/23/20/57/washington-dc-85531_1280.jpg'); */
     background-size: cover;
     background-attachment: fixed;
     margin: 0px;
-    background-color: whitesmoke;
+    background-color: rgb(66, 72, 128);
 }
 
 nav {
