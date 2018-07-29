@@ -1,9 +1,12 @@
-const mongoose = require("../db/connection");
+const mongoose = require('../db/connection')
 
 const EventSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true
+  },
+  image: {
+    type: String
   },
   date: {
     type: String,
@@ -18,8 +21,8 @@ const EventSchema = new mongoose.Schema({
     type: String,
     required: true
   }
-});
+})
 
-const Event = mongoose.model("Event", EventSchema);
+const Event = mongoose.model('Event', EventSchema)
 
-module.exports = Event;
+module.exports = Event
