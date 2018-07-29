@@ -8,3 +8,4 @@ members from different churches to attend to create solidarity instead of segreg
 Created using Express, Mongoose, Handlebars, Node. Basic CRUD functionality. 
 
 At a later date, when I understand more, I would like to add user authentication, comment features and messaging ability for event coordination between churches.
+# faithforward3
