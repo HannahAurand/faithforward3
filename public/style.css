@@ -1,3 +1,59 @@
 .header {
     width: 50%;
+    font-family: 'Raleway', sans-serif;
 }
+
+.header h1 {
+    font-size: 150%;
+    color: rgb(209, 46, 46);
+}
+
+.navbar {
+    background-color: white;
+}
+
+.btn-space {
+    margin-left: 30px;
+    margin-right: 5px;
+    color: rgb(209, 46, 46);
+}
+
+.btn-space:hover {
+    background-color: rgb(209, 46, 46);
+    color: white;
+}
+
+/* a, a:hover {
+    all: unset;
+} */
+
+.search-space {
+    margin: 10px;
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 900px) {
+    .header h1 {
+        font-size: 300%;
+        color: rgb(209, 46, 46);
+    }
+
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn-space {
+        margin-left: 30px;
+        margin-right: 5px;
+        color: rgb(209, 46, 46);
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .search-space {
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
