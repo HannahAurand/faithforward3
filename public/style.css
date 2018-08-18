@@ -74,6 +74,11 @@ img {
     margin-right: 10px;
 }
 
+.home-page-event-title {
+    max-height: 26px;
+    overflow: hidden;
+}
+
 @media only screen and (max-width: 900px) {
     .header h1 {
         font-size: 300%;
@@ -106,11 +111,28 @@ img {
 }
 
 .show-page-image {
-    max-width: 400px;
+    /* max-height: 400px; */
+    overflow:hidden;
+}
+
+.show-page-image img {
+    max-height: 400px;
 }
 
 .show-page-info {
-    margin-top: 10%;
+    /* margin-top: 10%; */
+}
+
+.show-page-description {
+    white-space: pre-wrap;
+}
+ .navbar a {
+    text-decoration: none;
+}
+
+.page-title {
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 
