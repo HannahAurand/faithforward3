@@ -24,6 +24,7 @@
     "cookie-parser": "^1.4.3",
     "express": "^4.16.2",
     "express-session": "^1.15.6",
+    "handlebars-helpers": "^0.10.0",
     "hbs": "^4.0.1",
     "method-override": "^2.3.10",
     "mongo": "^0.1.0",

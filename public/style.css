@@ -1,3 +1,5 @@
+/* Styling for the home page */
+
 .header {
     width: 50%;
     font-family: 'Raleway', sans-serif;
@@ -23,9 +25,49 @@
     color: white;
 }
 
-/* a, a:hover {
-    all: unset;
-} */
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    overflow: hidden;
+    height: 200px;
+}
+
+.imageContainer img {
+    /* flex-shrink: 0; */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.description {
+    max-height: 20px;
+    overflow: hidden;
+}
+
+img {
+    position: cover;
+    overflow: hidden;
+}
+
+.edit {
+    text-decoration: none!important;
+    padding: 10px; 
+    background-color: rgb(244, 245, 169);
+    color: black;
+    max-width: 150px;
+    border:none;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.delete {
+    padding: 10px;
+    background-color: rgb(238, 200, 200);
+    max-width: 150px;
+    border: none;
+    text-align: center;
+    
+}
 
 .search-space {
     margin: 10px;
@@ -56,4 +98,19 @@
         margin-left: 0px;
     }
 }
+
+/* Styling for the Event Show Page */
+
+.show-page {
+    width: 100%;
+}
+
+.show-page-image {
+    max-width: 400px;
+}
+
+.show-page-info {
+    margin-top: 10%;
+}
+
 

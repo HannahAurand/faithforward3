@@ -19,17 +19,6 @@ router.get('/new', (req, res) => {
   res.render('events/new')
 })
 
-//when client clicks link to request a certain event to
-//edit, upon her request, respond by going to the
-//EVENT object and finding the id, which is the required
-//parameter for the edit. Then, render that event's information
-//into the event edit form.
-router.get('/edit/:id', (req, res) => {
-  Event.findOne({ _id: req.params.id }).then(event => {
-    res.render('events/edit', event)
-  })
-})
-
 //
 router.put('/:id', (req, res) => {
   Event.findOneAndUpdate({ _id: req.params.id }, req.body).then(Event => {
@@ -40,6 +29,24 @@ router.put('/:id', (req, res) => {
 router.delete('/:id', (req, res) => {
   Event.findOneAndRemove({ _id: req.params.id }).then(() => {
     res.redirect('/')
+  })
+})
+
+router.get('/show/:id', (req, res) => {
+  console.log('I work')
+  Event.findOne({ _id: req.params.id }).then(event => {
+    res.render('events/show', event)
+  })
+})
+
+//when client clicks link to request a certain event to
+//edit, upon her request, respond by going to the
+//EVENT object and finding the id, which is the required
+//parameter for the edit. Then, render that event's information
+//into the event edit form.
+router.get('/edit/:id', (req, res) => {
+  Event.findOne({ _id: req.params.id }).then(event => {
+    res.render('events/edit', event)
   })
 })
 

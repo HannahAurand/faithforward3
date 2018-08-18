@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row">
+    <div class="col-md-6 show-page-image"><img src="{{image}}" alt="{{title}}"></div>
+    <div class="col-md-6 show-page-info">
+        <h3>{{title}}</h3>
+        <p class="description">{{description}}</p>
+        <div class="whenContainer">
+        <p><span class="when">Date:</span> {{date}}</p>
+        <p><span class="when">Time:</span> {{time}}</p>
+        <p><span class="when">Location:</span> {{location}}</p>
+        </div>
+        <div class="container">
+            <div class="row">
+                <form action="/events/{{this.id}}?_method=delete" method="POST">
+                    <input type="submit" value="Remove Event" class="col-sm-6 delete">
+                </form>
+                <a href="/events/edit/{{id}}" class="col-sm-6 edit">Edit Event Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
